@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace BlackCat\Database\Packages\Permissions\Service;
 
-use BlackCat\Core\Database\Database;
+use BlackCat\Core\Database;
 use BlackCat\Database\Packages\Permissions\Dto\PermissionDto;
 use BlackCat\Database\Packages\Permissions\Mapper\PermissionDtoMapper;
 use BlackCat\Database\Packages\Permissions\Repository\PermissionRepository;
