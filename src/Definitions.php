@@ -6,7 +6,7 @@ namespace BlackCat\Database\Packages\Permissions;
 final class Definitions {
     // --- základní metadata ---
     public static function table(): string { return 'permissions'; }
-    public static function contractView(): string { return 'v_permissions_contract'; }
+    public static function contractView(): string { return 'vw_permissions'; }
     /** @return string[] */
     public static function columns(): array { return [ 'id', 'name', 'description', 'created_at', 'updated_at' ]; }
     public static function pk(): string { return 'id'; }
