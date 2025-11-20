@@ -1,4 +1,4 @@
-<!-- Auto-generated from schema-map.psd1 @ 6cefe8e (2025-10-22T20:27:41+02:00) -->
+<!-- Auto-generated from schema-map-postgres.psd1 @ 62c9c93 (2025-11-20T21:38:11+01:00) -->
 # Definition – permissions
 
 Application permission catalog.
@@ -6,8 +6,8 @@ Application permission catalog.
 ## Columns
 | Column | Type | Null | Default | Description | Notes |
 |-------:|:-----|:----:|:--------|:------------|:------|
-| id | BIGINT UNSIGNED | — | — | Surrogate primary key. |  |
+| id | BIGINT | — | AS | Surrogate primary key. |  |
 | name | VARCHAR(100) | NO | — | Unique permission name. |  |
 | description | TEXT | YES | — | Human description. |  |
-| created_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |  |
-| updated_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |  |
+| created_at | TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |  |
+| updated_at | TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |  |

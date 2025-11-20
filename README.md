@@ -2,7 +2,7 @@
 
 ![SQL](https://img.shields.io/badge/SQL-MySQL%208.0%2B-4479A1?logo=mysql&logoColor=white) ![License](https://img.shields.io/badge/license-BlackCat%20Proprietary-red) ![Status](https://img.shields.io/badge/status-stable-informational) ![Generated](https://img.shields.io/badge/generated-from%20schema--map-blue)
 
-<!-- Auto-generated from schema-map.psd1 @ 6cefe8e (2025-10-22T20:27:41+02:00) -->
+<!-- Auto-generated from schema-map-postgres.psd1 @ 62c9c93 (2025-11-20T21:38:11+01:00) -->
 
 > Schema package for table **permissions** (repo: `permissions`).
 
@@ -36,11 +36,11 @@ mysql -h 127.0.0.1 -P 3307 -u root -proot app < schema/001_table.sql
 ## Columns
 | Column | Type | Null | Default | Extra |
 |-------:|:-----|:----:|:--------|:------|
-| id | BIGINT UNSIGNED | — | — | AUTO_INCREMENT, PK |
+| id | BIGINT | — | AS | PK |
 | name | VARCHAR(100) | NO | — |  |
 | description | TEXT | YES | — |  |
-| created_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) |  |
-| updated_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) |  |
+| created_at | TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) |  |
+| updated_at | TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) |  |
 
 ## Relationships
 - No outgoing foreign keys.
@@ -51,8 +51,8 @@ erDiagram
     INT id PK
     VARCHAR name
     VARCHAR description
-    DATETIME created_at
-    DATETIME updated_at
+    TIMESTAMPTZ created_at
+    TIMESTAMPTZ updated_at
   }
 ```
 
