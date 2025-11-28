@@ -17,7 +17,7 @@ use BlackCat\Database\Support\DtoHydrator;
 final class PermissionDtoMapper
 {
     /** @var array<string,string> Column -> DTO property */
-    private const COL_TO_PROP = [ 'created_at' => 'createdAt', 'updated_at' => 'updatedAt' ];
+    private const COL_TO_PROP = [ 'id' => 'id', 'name' => 'name', 'description' => 'description', 'created_at' => 'createdAt', 'updated_at' => 'updatedAt' ];
 
     /** @var string[] */
     private const BOOL_COLS   = [];
