@@ -5,11 +5,11 @@ Application permission catalog.
 ## Columns
 | Column | Type | Null | Default | Description |
 | --- | --- | --- | --- | --- |
-| created_at | TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
+| created_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
 | description | TEXT | YES |  | Human description. |
 | id | BIGINT | NO |  | Surrogate primary key. |
 | name | VARCHAR(100) | NO |  | Unique permission name. |
-| updated_at | TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |
+| updated_at | DATETIME(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |
 
 ## Engine Details
 
@@ -22,5 +22,5 @@ Application permission catalog.
 ## Views
 | View | Engine | Flags | File |
 | --- | --- | --- | --- |
-| vw_permissions | mysql | algorithm=MERGE, security=INVOKER | [packages\permissions\schema\040_views.mysql.sql](https://github.com/blackcatacademy/blackcat-database/packages/permissions/schema/040_views.mysql.sql) |
-| vw_permissions | postgres |  | [packages\permissions\schema\040_views.postgres.sql](https://github.com/blackcatacademy/blackcat-database/packages/permissions/schema/040_views.postgres.sql) |
+| vw_permissions | mysql | algorithm=MERGE, security=INVOKER | [schema\040_views.mysql.sql](schema\040_views.mysql.sql) |
+| vw_permissions | postgres |  | [schema\040_views.postgres.sql](schema\040_views.postgres.sql) |
