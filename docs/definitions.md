@@ -6,10 +6,10 @@ Application permission catalog.
 | Column | Type | Null | Default | Description |
 | --- | --- | --- | --- | --- |
 | created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |
+| description | TEXT | YES |  | Human description. |
+| id | BIGINT | NO |  | Surrogate primary key. |
 | name | VARCHAR(100) | NO |  | Unique permission name. |
 | updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |
-| id | BIGINT | NO |  | Surrogate primary key. |
-| description | TEXT | YES |  | Human description. |
 
 ## Engine Details
 
